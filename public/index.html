@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards against Humanity</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="subContainer">
+            <label for="username" class="label">Username:</label>
+            <input type="text" name="username" id="usernameInput">
+        </div>
+
+        <div class="subContainer">
+            <h2 class="subtitle">Create a new game</h2>
+            <label for="gamename">Choose a name for the game</label>
+            <input type="text" name="gamename" id="gamenameInput">
+            <label for="playeramount">Set your amount of players</label>
+            <input type="number" name="playeramount" id="playeramountInput" step="1" min="3" max="8" value="3">
+            <button class="btn" id="createGameBtn">Create Game</button>
+        </div>
+
+        <div class="subContainer">
+            <h2 class="subtitle">Join a game</h2>
+            <div class="currentGamesContainer">
+                <p id="currentGamesContainerText">
+                    There are no open games currently. Create one instead
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/index.js"></script>
+</body>
+
+</html>
