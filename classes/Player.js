@@ -7,7 +7,7 @@
 
 class Player {
 	constructor(username) {
-		this.name = username;
+		this._name = username;
 		this._points = 0;
 		this._cards = [];
 		this._turn = false;
@@ -24,14 +24,32 @@ class Player {
 	set cards(cardsArray) {
 		this._cards = cardsArray;
 	}
-	addCard(card) {
-		this._cards.push(card);
-	}
 	get turn() {
 		return this._turn;
 	}
 	set turn(bool) {
 		this._turn = bool;
+	}
+
+	addCard(card) {
+		card.player = this._name;
+		this._cards.push(card);
+	}
+	addPoints(amount) {
+		this._points += amount;
+	}
+	findCardByID(id) {
+		for (let i = 0; i < this._cards.length; i++) {
+			if (this._cards[i].id == id) return { cardObj: this._cards[i], index: i };
+		}
+	}
+	findCardByIndex(index) {
+		return this._cards[index];
+	}
+	playCard(id, index) {
+		// if index isn't given and only ID is given
+		if (index === undefined) index = findCardByID(id).index;
+		return this._cards.splice(index, 1);
 	}
 }
 
