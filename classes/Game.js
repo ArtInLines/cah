@@ -84,7 +84,7 @@ class Game {
 
 	drawCards(cardsAmount = 1, cardsArray = this._whiteCards) {
 		const cards = cardsArray.splice(0, cardsAmount);
-		if ((cardsAmount = 1)) return cards[0];
+		if (cardsAmount == 1) return cards[0];
 		return cards;
 	}
 
@@ -156,7 +156,6 @@ class Game {
 
 		// Randomize start player
 		const randomPlayerIndex = Math.floor(Math.random() * this._players.length);
-		console.log('RANDOM START PLAYER INDEX', randomPlayerIndex); // For testing purposes
 		this._players[randomPlayerIndex].turn = true;
 
 		// Draw black card
