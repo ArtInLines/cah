@@ -6,6 +6,7 @@ class Game {
 		this._cardsAmount = cardsNum;
 		this._whiteCards = [];
 		this._blackCards = [];
+		this._currentBlackCard = {};
 	}
 	get roundsAmount() {
 		return this._roundsAmount;
@@ -39,6 +40,12 @@ class Game {
 	}
 	set blackCards(arr) {
 		this._blackCards = arr;
+	}
+	get currentBlackCard() {
+		return this._currentBlackCard;
+	}
+	set currentBlackCard(cardObj) {
+		this._currentBlackCard = cardObj;
 	}
 
 	addPlayer(playerObj) {
@@ -76,7 +83,9 @@ class Game {
 	}
 
 	drawCards(cardsAmount = 1, cardsArray = this._whiteCards) {
-		return cardsArray.splice(0, cardsAmount);
+		const cards = cardsArray.splice(0, cardsAmount);
+		if ((cardsAmount = 1)) return cards[0];
+		return cards;
 	}
 
 	givePlayerCards(key, cardsAmount = 1, resetAllCards = false) {
@@ -134,7 +143,7 @@ class Game {
 		this.giveAllPlayersCards();
 
 		// Draw new black card
-		return this.drawCards(1, this._blackCards);
+		this._currentBlackCard = this.drawCards(1, this._blackCards);
 	}
 
 	startGame() {
@@ -147,11 +156,11 @@ class Game {
 
 		// Randomize start player
 		const randomPlayerIndex = Math.floor(Math.random() * (this._players.length - 1));
-		console.log(randomPlayerIndex); // For testing purposes
+		console.log('RANDOM START PLAYER INDEX', randomPlayerIndex); // For testing purposes
 		this._players[randomPlayerIndex].turn = true;
 
 		// Draw black card
-		return this.drawCards(1, this._blackCards);
+		this._currentBlackCard = this.drawCards(1, this._blackCards);
 	}
 }
 
