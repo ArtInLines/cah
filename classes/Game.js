@@ -155,7 +155,7 @@ class Game {
 		this.giveAllPlayersCards();
 
 		// Randomize start player
-		const randomPlayerIndex = Math.floor(Math.random() * (this._players.length - 1));
+		const randomPlayerIndex = Math.floor(Math.random() * this._players.length);
 		console.log('RANDOM START PLAYER INDEX', randomPlayerIndex); // For testing purposes
 		this._players[randomPlayerIndex].turn = true;
 
