@@ -1,203 +1,42 @@
 [
-	{
-		"text": "Text 1",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 2",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 3",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 4",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 5",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 6",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 7",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 8",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 9",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 10",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 11",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 12",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 13",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 14",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 15",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 16",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 17",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 18",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 19",
-		"player": "",
-		"pack": "Standard"
-	},
-
-	{
-		"text": "Text 20",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 21",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 22",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 23",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 24",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 25",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 26",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 27",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 28",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 29",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 30",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 31",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 32",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 33",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 34",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 35",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 36",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 37",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 38",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 39",
-		"player": "",
-		"pack": "Standard"
-	},
-	{
-		"text": "Text 40",
-		"player": "",
-		"pack": "Standard"
-	}
+	{ "text": "Text 1", "player": "", "pack": "Standard", "id": 1 },
+	{ "text": "Text 2", "player": "", "pack": "Standard", "id": 2 },
+	{ "text": "Text 3", "player": "", "pack": "Standard", "id": 3 },
+	{ "text": "Text 4", "player": "", "pack": "Standard", "id": 4 },
+	{ "text": "Text 5", "player": "", "pack": "Standard", "id": 5 },
+	{ "text": "Text 6", "player": "", "pack": "Standard", "id": 6 },
+	{ "text": "Text 7", "player": "", "pack": "Standard", "id": 7 },
+	{ "text": "Text 8", "player": "", "pack": "Standard", "id": 8 },
+	{ "text": "Text 9", "player": "", "pack": "Standard", "id": 9 },
+	{ "text": "Text 10", "player": "", "pack": "Standard", "id": 10 },
+	{ "text": "Text 11", "player": "", "pack": "Standard", "id": 11 },
+	{ "text": "Text 12", "player": "", "pack": "Standard", "id": 12 },
+	{ "text": "Text 13", "player": "", "pack": "Standard", "id": 13 },
+	{ "text": "Text 14", "player": "", "pack": "Standard", "id": 14 },
+	{ "text": "Text 15", "player": "", "pack": "Standard", "id": 15 },
+	{ "text": "Text 16", "player": "", "pack": "Standard", "id": 16 },
+	{ "text": "Text 17", "player": "", "pack": "Standard", "id": 17 },
+	{ "text": "Text 18", "player": "", "pack": "Standard", "id": 18 },
+	{ "text": "Text 19", "player": "", "pack": "Standard", "id": 19 },
+	{ "text": "Text 20", "player": "", "pack": "Standard", "id": 20 },
+	{ "text": "Text 21", "player": "", "pack": "Standard", "id": 21 },
+	{ "text": "Text 22", "player": "", "pack": "Standard", "id": 22 },
+	{ "text": "Text 23", "player": "", "pack": "Standard", "id": 23 },
+	{ "text": "Text 24", "player": "", "pack": "Standard", "id": 24 },
+	{ "text": "Text 25", "player": "", "pack": "Standard", "id": 25 },
+	{ "text": "Text 26", "player": "", "pack": "Standard", "id": 26 },
+	{ "text": "Text 27", "player": "", "pack": "Standard", "id": 27 },
+	{ "text": "Text 28", "player": "", "pack": "Standard", "id": 28 },
+	{ "text": "Text 29", "player": "", "pack": "Standard", "id": 29 },
+	{ "text": "Text 30", "player": "", "pack": "Standard", "id": 30 },
+	{ "text": "Text 31", "player": "", "pack": "Standard", "id": 31 },
+	{ "text": "Text 32", "player": "", "pack": "Standard", "id": 32 },
+	{ "text": "Text 33", "player": "", "pack": "Standard", "id": 33 },
+	{ "text": "Text 34", "player": "", "pack": "Standard", "id": 34 },
+	{ "text": "Text 35", "player": "", "pack": "Standard", "id": 35 },
+	{ "text": "Text 36", "player": "", "pack": "Standard", "id": 36 },
+	{ "text": "Text 37", "player": "", "pack": "Standard", "id": 37 },
+	{ "text": "Text 38", "player": "", "pack": "Standard", "id": 38 },
+	{ "text": "Text 39", "player": "", "pack": "Standard", "id": 39 },
+	{ "text": "Text 40", "player": "", "pack": "Standard", "id": 40 }
 ]

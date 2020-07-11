@@ -1,203 +1,42 @@
 [
-	{
-		"text": "Text ___ 1",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 2",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 3",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 4",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 5",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 6",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 7",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 8",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 9",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 10",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 11",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 12",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 13",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 14",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 15",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 16",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 17",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 18",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 19",
-		"amount": 1,
-		"pack": "Standard"
-	},
-
-	{
-		"text": "Text ___ 20",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 21",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 22",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 23",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 24",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 25",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 26",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 27",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 28",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 29",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 30",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 31",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 32",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 33",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 34",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 35",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 36",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 37",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 38",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 39",
-		"amount": 1,
-		"pack": "Standard"
-	},
-	{
-		"text": "Text ___ 40",
-		"amount": 1,
-		"pack": "Standard"
-	}
+	{ "text": "Text ___ 1", "amount": 1, "pack": "Standard", "id": 1 },
+	{ "text": "Text ___ 2", "amount": 1, "pack": "Standard", "id": 2 },
+	{ "text": "Text ___ 3", "amount": 1, "pack": "Standard", "id": 3 },
+	{ "text": "Text ___ 4", "amount": 1, "pack": "Standard", "id": 4 },
+	{ "text": "Text ___ 5", "amount": 1, "pack": "Standard", "id": 5 },
+	{ "text": "Text ___ 6", "amount": 1, "pack": "Standard", "id": 6 },
+	{ "text": "Text ___ 7", "amount": 1, "pack": "Standard", "id": 7 },
+	{ "text": "Text ___ 8", "amount": 1, "pack": "Standard", "id": 8 },
+	{ "text": "Text ___ 9", "amount": 1, "pack": "Standard", "id": 9 },
+	{ "text": "Text ___ 10", "amount": 1, "pack": "Standard", "id": 10 },
+	{ "text": "Text ___ 11", "amount": 1, "pack": "Standard", "id": 11 },
+	{ "text": "Text ___ 12", "amount": 1, "pack": "Standard", "id": 12 },
+	{ "text": "Text ___ 13", "amount": 1, "pack": "Standard", "id": 13 },
+	{ "text": "Text ___ 14", "amount": 1, "pack": "Standard", "id": 14 },
+	{ "text": "Text ___ 15", "amount": 1, "pack": "Standard", "id": 15 },
+	{ "text": "Text ___ 16", "amount": 1, "pack": "Standard", "id": 16 },
+	{ "text": "Text ___ 17", "amount": 1, "pack": "Standard", "id": 17 },
+	{ "text": "Text ___ 18", "amount": 1, "pack": "Standard", "id": 18 },
+	{ "text": "Text ___ 19", "amount": 1, "pack": "Standard", "id": 19 },
+	{ "text": "Text ___ 20", "amount": 1, "pack": "Standard", "id": 20 },
+	{ "text": "Text ___ 21", "amount": 1, "pack": "Standard", "id": 21 },
+	{ "text": "Text ___ 22", "amount": 1, "pack": "Standard", "id": 22 },
+	{ "text": "Text ___ 23", "amount": 1, "pack": "Standard", "id": 23 },
+	{ "text": "Text ___ 24", "amount": 1, "pack": "Standard", "id": 24 },
+	{ "text": "Text ___ 25", "amount": 1, "pack": "Standard", "id": 25 },
+	{ "text": "Text ___ 26", "amount": 1, "pack": "Standard", "id": 26 },
+	{ "text": "Text ___ 27", "amount": 1, "pack": "Standard", "id": 27 },
+	{ "text": "Text ___ 28", "amount": 1, "pack": "Standard", "id": 28 },
+	{ "text": "Text ___ 29", "amount": 1, "pack": "Standard", "id": 29 },
+	{ "text": "Text ___ 30", "amount": 1, "pack": "Standard", "id": 30 },
+	{ "text": "Text ___ 31", "amount": 1, "pack": "Standard", "id": 31 },
+	{ "text": "Text ___ 32", "amount": 1, "pack": "Standard", "id": 32 },
+	{ "text": "Text ___ 33", "amount": 1, "pack": "Standard", "id": 33 },
+	{ "text": "Text ___ 34", "amount": 1, "pack": "Standard", "id": 34 },
+	{ "text": "Text ___ 35", "amount": 1, "pack": "Standard", "id": 35 },
+	{ "text": "Text ___ 36", "amount": 1, "pack": "Standard", "id": 36 },
+	{ "text": "Text ___ 37", "amount": 1, "pack": "Standard", "id": 37 },
+	{ "text": "Text ___ 38", "amount": 1, "pack": "Standard", "id": 38 },
+	{ "text": "Text ___ 39", "amount": 1, "pack": "Standard", "id": 39 },
+	{ "text": "Text ___ 40", "amount": 1, "pack": "Standard", "id": 40 }
 ]
