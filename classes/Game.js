@@ -1,38 +1,63 @@
 class Game {
-	constructor(gamename) {
+	constructor(gamename, roundsNum = 30, cardsNum = 7) {
 		this._name = gamename;
 		this._players = [];
-		this.roundsAmount = 30;
-		this.cardsAmount = 7;
+		this._roundsAmount = roundsNum;
+		this._cardsAmount = cardsNum;
 		this._whiteCards = [];
 		this._blackCards = [];
+	}
+	get roundsAmount() {
+		return this._roundsAmount;
+	}
+	set roundsAmount(x) {
+		this._roundsAmount = x;
+	}
+	get cardsAmount() {
+		return this._cardsAmount;
+	}
+	set cardsAmount(x) {
+		this._cardsAmount = x;
 	}
 	get players() {
 		return this._players;
 	}
-	getSinglePlayer(playerName) {
-		for (let i = 0; i < this._players.length; i++) {
-			if (this._players[i].name === playerName) return { playerObj: playerEl, index: i };
+	set players(playersArr) {
+		for (let i = 0; i < playersArr.length; i++) {
+			playersArr[i].turn = false;
 		}
+		this._players = playersArr;
 	}
 	get whiteCards() {
 		return this._whiteCards;
 	}
-	get blackCards() {
-		return this._blackCards;
-	}
-	set players(playersArr) {
-		this._players = playersArr;
-	}
 	set whiteCards(arr) {
 		this._whiteCards = arr;
+	}
+	get blackCards() {
+		return this._blackCards;
 	}
 	set blackCards(arr) {
 		this._blackCards = arr;
 	}
+
 	addPlayer(playerObj) {
+		playerObj.turn = false;
 		this._players.push(playerObj);
 	}
+
+	getSinglePlayer(playerName) {
+		for (let i = 0; i < this._players.length; i++) {
+			if (this._players[i].name === playerName) return { playerObj: this._players[i], index: i };
+		}
+	}
+
+	getStartPlayer() {
+		for (let i = 0; i < this._players.length; i++) {
+			if (this._players[i].turn) return { playerObj: this._players[i], index: i };
+		}
+	}
+
 	shuffle(array) {
 		let currentIndex = array.length,
 			temporaryValue,
@@ -49,16 +74,23 @@ class Game {
 		}
 		return array;
 	}
-	drawCards(cardsArray = this._whiteCards, cardsAmount = 1) {
+
+	drawCards(cardsAmount = 1, cardsArray = this._whiteCards) {
 		return cardsArray.splice(0, cardsAmount);
 	}
-	givePlayerCards(key, cardsArray, resetAllCards = false) {
-		// If index of player is unknown
+
+	givePlayerCards(key, cardsAmount = 1, resetAllCards = false) {
+		// Get cards via drawing helper fucntion
+		let cardsArray = this.drawCards(cardsAmount);
+
+		// If index of player is unknown -- Name must be known
 		if (isNaN(key)) {
 			for (let i = 0; i < this._players.length; i++) {
+				// Loop through players to find player with fitting key (name)
 				if (this._players[i].name === key) {
 					if (resetAllCards) return (this._players[i].cards = cardsArray);
 					for (let j = 0; j < cardsArray.length; j++) {
+						// Loop through array of cards to be added
 						this._players[i].addCard(cardsArray[j]);
 					}
 					return this._players[i].cards;
@@ -68,22 +100,59 @@ class Game {
 		// If index of player is known
 		else {
 			if (resetAllCards) return (this._players[key].cards = cardsArray);
+			// Loop through array of cards to be added
 			for (let i = 0; i < cardsArray.length; i++) {
 				this._players[key].addCard(cardsArray[i]);
 			}
+			return this._players[key].cards;
 		}
 	}
+
+	giveAllPlayersCards(resetAllCards = false) {
+		// Loop through players
+		for (let i = 0; i < this._players.length; i++) {
+			// Get amount of cards needed to be drawn for player
+			const neededCardsAmount = this._cardsAmount - this._players[i].cards.length;
+			this.givePlayerCards(i, neededCardsAmount, resetAllCards);
+		}
+	}
+
+	startNextTurn() {
+		//Check who's turn it is rn and give it to the next player
+		const currentStartPlayer = this.getStartPlayer();
+		currentStartPlayer.playerObj.turn = false;
+		// Check if player is last in players array
+		let newStartPlayer;
+		if (currentStartPlayer.index == this._players.length - 1) {
+			newStartPlayer = this._players[0];
+		} else {
+			newStartPlayer = this._players[currentStartPlayer.index + 1];
+		}
+		newStartPlayer.turn = true;
+
+		// Giving every player cards until they reach their limit of cards again
+		this.giveAllPlayersCards();
+
+		// Draw new black card
+		return this.drawCards(1, this._blackCards);
+	}
+
 	startGame() {
+		// Shuffle cards
 		this._blackCards = this.shuffle(this._blackCards);
 		this._whiteCards = this.shuffle(this._whiteCards);
-		for (let i = 0; i < this._players.length; i++) {
-			const drawnCards = this.drawCards(this._whiteCards, this.cardsAmount);
-			this.givePlayerCards(i, drawnCards, false);
-		}
+
+		// Give every player cards
+		this.giveAllPlayersCards();
+
+		// Randomize start player
+		const randomPlayerIndex = Math.floor(Math.random() * (this._players.length - 1));
+		console.log(randomPlayerIndex); // For testing purposes
+		this._players[randomPlayerIndex].turn = true;
+
+		// Draw black card
+		return this.drawCards(1, this._blackCards);
 	}
 }
 
 module.exports = Game;
-
-const testGame = new Game('testGame');
-testGame.whiteCards;
